@@ -77,10 +77,7 @@
         },
         "traits": {
             "rarity": "common",
-            "traditions": [
-                "divine",
-                "occult"
-            ],
+            "traditions": [],
             "value": [
                 "concentrate",
                 "manipulate",
