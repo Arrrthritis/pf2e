@@ -150,7 +150,7 @@ class CompendiumPack {
                     // Ensure all linked-weapon IDs point to a weapon
                     const attackItems = docSource.items.filter((i): i is MeleeSource => i.type === "melee");
                     for (const item of attackItems) {
-                        const { linkedWeapon } = item.flags?.pf2e ?? {};
+                        const { linkedWeapon } = item.flags?.[systemId] ?? {};
                         const weaponFound = linkedWeapon
                             ? docSource.items.some((i) => i._id === linkedWeapon && i.type === "weapon")
                             : false;
@@ -289,7 +289,7 @@ class CompendiumPack {
                     const source = parsePackEntrySource(pf2ePath);
                     if (source.folder) {
                         const folderPath = pf2eFolderPaths[source.folder];
-                        source.folder = sf2eFolderLookup[folderPath] ?? null;
+                        source.folder = sf2eFolderLookup[folderPath] ?? folders.find((f) => f._id === source.folder);
                         if (!source.folder) {
                             console.warn(`Failed to find folder ${folderPath} for item ${name} in pack ${packDirName}`);
                         }
