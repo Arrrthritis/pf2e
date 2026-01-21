@@ -774,9 +774,10 @@
                         "outcome": [
                             "criticalSuccess"
                         ],
-                        "selector": "attack",
-                        "text": "{item|system.description.value}",
-                        "title": "{item|name}"
+                        "selector": "strike-attack-roll",
+                        "text": "{item|description}",
+                        "title": "{item|name}",
+                        "visibility": "owner"
                     }
                 ],
                 "slug": null,
@@ -823,7 +824,7 @@
         {
             "_id": "5itOh2MJzI6seuWf",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "Oathbreaker’s Curse",
+            "name": "Oathbreaker's Curse",
             "sort": 1800000,
             "system": {
                 "actionType": {

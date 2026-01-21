@@ -864,8 +864,8 @@
                         "outcome": [
                             "criticalSuccess"
                         ],
-                        "selector": "strike-damage",
-                        "text": "{item|system.description.value}",
+                        "selector": "strike-attack-roll",
+                        "text": "{item|description}",
                         "title": "{item|name}",
                         "visibility": "owner"
                     }
@@ -1038,6 +1038,9 @@
                 "value": 345
             },
             "immunities": [
+                {
+                    "type": "bleed"
+                },
                 {
                     "type": "death-effects"
                 },

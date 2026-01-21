@@ -64,10 +64,10 @@
         "entries": {
             "actions": [
                 "Aid",
+                "Arrest a Fall",
                 "Avoid Notice",
-                "Balance",
-                "Board",
                 "Burrow",
+                "Borrow an Arcane Spell",
                 "Cast a Spell",
                 "Change Shape",
                 "Climb",
@@ -78,7 +78,6 @@
                 "Crawl",
                 "Create a Diversion",
                 "Create Forgery",
-                "Decipher Writing",
                 "Defend",
                 "Delay",
                 "Demoralize",
@@ -86,9 +85,7 @@
                 "Disarm",
                 "Dismiss",
                 "Dragon Breath (Dragon Form)",
-                "Drive",
                 "Drop Prone",
-                "Earn Income",
                 "Escape",
                 "Feint",
                 "Fly",
@@ -111,7 +108,6 @@
                 "Maneuver in Flight",
                 "Mount",
                 "Palm an Object",
-                "Perform",
                 "Point Out",
                 "Raise a Shield",
                 "Reactive Strike",
@@ -119,10 +115,10 @@
                 "Recall Knowledge",
                 "Refocus",
                 "Release",
-                "Repair",
+                "Repeat a Spell",
                 "Reposition",
+                "Retraining",
                 "Request",
-                "Research",
                 "Scout",
                 "Search",
                 "Seek",
@@ -135,7 +131,6 @@
                 "Step",
                 "Stride",
                 "Strike",
-                "Subsist",
                 "Sustain",
                 "Swim",
                 "Take Cover",
@@ -190,9 +185,6 @@
                 "Unfriendly",
                 "Unnoticed",
                 "Wounded"
-            ],
-            "equipment": [
-                "Repair Toolkit"
             ],
             "equipment-effects": [
                 "Effect: Parry",
@@ -690,6 +682,25 @@
             ],
             "macros": [
                 "Treat Wounds"
+            ]
+        }
+    },
+    {
+        "publication": "Starfinder GM Core",
+        "entries": {
+            "actions": [
+                "Board",
+                "Bribe Contact",
+                "Discover",
+                "Drive",
+                "Gain Contact",
+                "Gossip",
+                "Influence",
+                "Research",
+                "Run Over",
+                "Scout Location",
+                "Secure Disguises",
+                "Stop"
             ]
         }
     },
