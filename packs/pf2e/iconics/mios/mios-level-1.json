@@ -1,7 +1,7 @@
 {
     "_id": "wMTIXOfCTEKRW0UH",
     "folder": "yuUzZE3t3acJKQwH",
-    "img": "systems/pf2e/icons/default-icons/character.svg",
+    "img": "systems/pf2e/icons/iconics/portraits/mios.webp",
     "items": [
         {
             "_id": "FkQLZNYcEw9JKwgP",
@@ -133,7 +133,7 @@
                     {
                         "flag": "arcaneSense",
                         "key": "GrantItem",
-                        "uuid": "{item|flags.pf2e.rulesSelections.versatileHeritage}"
+                        "uuid": "{item|flags.system.rulesSelections.versatileHeritage}"
                     }
                 ],
                 "slug": "versatile-human",
@@ -520,7 +520,7 @@
                     {
                         "key": "ActiveEffectLike",
                         "mode": "override",
-                        "path": "flags.pf2e.thaumaturge.adeptChoices",
+                        "path": "flags.system.thaumaturge.adeptChoices",
                         "priority": 10,
                         "value": []
                     },
@@ -539,7 +539,7 @@
                     {
                         "flag": "lantern",
                         "key": "GrantItem",
-                        "uuid": "{item|flags.pf2e.rulesSelections.implement}"
+                        "uuid": "{item|flags.system.rulesSelections.implement}"
                     }
                 ],
                 "slug": "first-implement-and-esoterica",
@@ -753,7 +753,7 @@
                     {
                         "key": "ActiveEffectLike",
                         "mode": "override",
-                        "path": "flags.pf2e.thaumaturge.initiateBenefit",
+                        "path": "flags.system.thaumaturge.initiateBenefit",
                         "predicate": [
                             "feat:thaumaturge-dedication"
                         ],
@@ -770,7 +770,7 @@
                     {
                         "key": "ActiveEffectLike",
                         "mode": "add",
-                        "path": "flags.pf2e.thaumaturge.adeptChoices",
+                        "path": "flags.system.thaumaturge.adeptChoices",
                         "predicate": [
                             "class:thaumaturge"
                         ],
@@ -930,7 +930,7 @@
                     {
                         "key": "ActiveEffectLike",
                         "mode": "override",
-                        "path": "flags.pf2e.thaumaturge.lantern",
+                        "path": "flags.system.thaumaturge.lantern",
                         "value": 20
                     },
                     {
@@ -945,9 +945,9 @@
                                 "speed": 3,
                                 "type": "pulse"
                             },
-                            "bright": "@actor.flags.pf2e.thaumaturge.lantern",
+                            "bright": "@actor.flags.system.thaumaturge.lantern",
                             "color": "#fff285",
-                            "dim": "2*@actor.flags.pf2e.thaumaturge.lantern"
+                            "dim": "2*@actor.flags.system.thaumaturge.lantern"
                         }
                     },
                     {
@@ -961,7 +961,7 @@
                         "predicate": [
                             "light-lantern-implement"
                         ],
-                        "radius": "@actor.flags.pf2e.thaumaturge.lantern",
+                        "radius": "@actor.flags.system.thaumaturge.lantern",
                         "traits": [
                             "light",
                             "magical"
@@ -1083,7 +1083,7 @@
                 },
                 "category": null,
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requierments</strong> You are holding your implement.</p><hr /><p>You scour your experiences and learning to identify something that might repel your foe. You retrieve an object from your esoterica with the appropriate supernatural qualities, then use your implement to stoke the remnants of its power into a blaze. Select a creature you can see and attempt an @Check[esoteric-lore] check against a standard DC for its level, as you retrieve the right object from your esoterica and use your implement to empower it. You gain the following effects until you Exploit Vulnerabilities again.</p><hr /><p><strong>Critical Success</strong> You remember the creature's weaknesses, and as you empower your esoterica, you have a flash of insight that grants even more knowledge about the creature. You learn all of the creature's resistances, weaknesses, and immunities, including the amounts of the resistances and weaknesses and any unusual weaknesses or vulnerabilities, such as an oni's bean panic. You can exploit either the creature's mortal weakness or personal antithesis (see below). Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Success</strong> You recall an important fact about the creature, learning its highest weakness (or one of its highest weaknesses, if it has multiple with the same value) but not its other weaknesses, resistances, or immunities. You can exploit either the creature's mortal weakness or personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Failure</strong> Failing to recall a salient weakness about the creature, you instead attempt to exploit a more personal vulnerability. You can exploit only the creature's personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Critical Failure</strong> You couldn't remember the right object to use and become distracted while you rummage through your esoterica. You become @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn.</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You are holding your implement.</p><hr /><p>You scour your experiences and learning to identify something that might repel your foe. You retrieve an object from your esoterica with the appropriate supernatural qualities, then use your implement to stoke the remnants of its power into a blaze. Select a creature you can see and attempt an @Check[esoteric-lore] check against a standard DC for its level, as you retrieve the right object from your esoterica and use your implement to empower it. You gain the following effects until you Exploit Vulnerabilities again.</p><hr /><p><strong>Critical Success</strong> You remember the creature's weaknesses, and as you empower your esoterica, you have a flash of insight that grants even more knowledge about the creature. You learn all of the creature's resistances, weaknesses, and immunities, including the amounts of the resistances and weaknesses and any unusual weaknesses or vulnerabilities, such as an oni's bean panic. You can exploit either the creature's mortal weakness or personal antithesis (see below). Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Success</strong> You recall an important fact about the creature, learning its highest weakness (or one of its highest weaknesses, if it has multiple with the same value) but not its other weaknesses, resistances, or immunities. You can exploit either the creature's mortal weakness or personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Failure</strong> Failing to recall a salient weakness about the creature, you instead attempt to exploit a more personal vulnerability. You can exploit only the creature's personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.</p>\n<p><strong>Critical Failure</strong> You couldn't remember the right object to use and become distracted while you rummage through your esoterica. You become @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn.</p>"
                 },
                 "frequency": {
                     "max": 1,
@@ -1250,14 +1250,14 @@
                     {
                         "key": "ActiveEffectLike",
                         "mode": "upgrade",
-                        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+                        "path": "system.skills.{item|flags.system.rulesSelections.skill}.rank",
                         "value": 1
                     },
                     {
                         "flag": "assurance",
                         "key": "GrantItem",
                         "preselectChoices": {
-                            "assurance": "{item|flags.pf2e.rulesSelections.skill}"
+                            "assurance": "{item|flags.system.rulesSelections.skill}"
                         },
                         "uuid": "Compendium.pf2e.feats-srd.Item.Assurance"
                     }
@@ -1342,7 +1342,7 @@
                     {
                         "key": "SubstituteRoll",
                         "label": "PF2E.SpecificRule.SubstituteRoll.Assurance",
-                        "selector": "{item|flags.pf2e.rulesSelections.assurance}",
+                        "selector": "{item|flags.system.rulesSelections.assurance}",
                         "slug": "assurance",
                         "value": 10
                     },
@@ -1354,7 +1354,7 @@
                                 "not": "bonus:type:proficiency"
                             }
                         ],
-                        "selector": "{item|flags.pf2e.rulesSelections.assurance}",
+                        "selector": "{item|flags.system.rulesSelections.assurance}",
                         "suppress": true
                     }
                 ],
@@ -1487,7 +1487,7 @@
                     {
                         "flag": "rootToLife",
                         "key": "GrantItem",
-                        "uuid": "{item|flags.pf2e.rulesSelections.naturalAmbition}"
+                        "uuid": "{item|flags.system.rulesSelections.naturalAmbition}"
                     }
                 ],
                 "slug": "natural-ambition",
@@ -2970,7 +2970,19 @@
     ],
     "name": "Mios (Level 1)",
     "prototypeToken": {
-        "name": "Mios"
+        "name": "Mios",
+        "ring": {
+            "enabled": true,
+            "subject": {
+                "scale": 2,
+                "texture": "systems/pf2e/icons/iconics/subjects/mios.webp"
+            }
+        },
+        "texture": {
+            "scaleX": 2,
+            "scaleY": 2,
+            "src": "systems/pf2e/icons/iconics/tokens/mios.webp"
+        }
     },
     "system": {
         "abilities": null,
